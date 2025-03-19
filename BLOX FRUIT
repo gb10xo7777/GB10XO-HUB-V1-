@@ -1,0 +1,122 @@
+getgenv().ConfigsKaitun = {
+    ["Safe Mode"] = false, -- Will be pass all anti cheat (but slow farm)
+
+    ["Melee"] = {  
+        ["Dark Step"] = true,  
+        ["Electric"] = true,  
+        ["Water Kung Fu"] = true,  
+        ["Dragon Breath"] = true,  
+        ["Superhuman"] = true,  
+        ["Death Step"] = true,  
+        ["Sharkman Karate"] = true,  
+        ["Electric Claw"] = true,  
+        ["Dragon Talon"] = true,  
+        ["God Human"] = true,  
+        ["Sanguine Art"] = true,  
+    },
+
+    ["Sword"] = {
+        -- : World 1
+        ["Saber"] = true,
+        ["Pole"] = true,
+        -- : World 2
+        ["Midnight Blade"] = true,
+        ["Shisui"] = true,
+        ["Saddi"] = true,
+        ["Wando"] = true,
+        ["Rengoku"] = true,
+        ["True Triple Katana"] = true,
+        -- : World 3
+        ["Yama"] = true,
+        ["Tushita"] = true,
+        ["Canvander"] = true,
+        ["Buddy Sword"] = true,
+        ["Twin Hooks"] = true,
+        ["Hallow Scythe"] = true,
+        ["Cursed Dual Katana"] = true,
+    },
+
+    ["Gun"] = {
+        -- : World 2
+        ["Kabucha"] = true,
+        -- : World 3
+        ["Venom Bow"] = true,
+        ["Skull Guitar"] = true,
+    },
+
+    ["Mastery"] = {
+        ["Melee"] = true,
+        ["Sword"] = false,
+        ["Devil Fruits"] = false,
+
+        ["Configs"] = {    
+            ["Selected All Sword"] = true,    
+            ["Select Sword"] = {"Cursed Dual Katana"},    
+        }
+    },
+
+    ["Race"] = {
+        ["v2"] = true,
+        ["v3"] = true,
+        ["Locked"] = {
+            ["Mink"] = true,
+            ["Human"] = true,
+            ["Skypiea"] = true,
+            ["Fishman"] = true,
+        },
+    },
+
+    ["Fruit"] = {
+        ["Main Fruit"] = {"Dragon-Dragon"},
+        ["Sec Fruit"] = {"Dragon-Dragon"},
+        ["Safe Fruit"] = {
+            "Dough-Dough",
+            "Dragon-Dragon"
+        },
+    },
+
+    ["Quest"] = {
+        ["Rainbow Haki"] = true,
+        ["Pull Lever"] = true,
+        ["Musketeer Hat"] = true,
+        ["Dough Mirror"] = true,
+        ["Shark Anchor"] = {
+            ["Enable"] = true,
+            ["Money"] = 120_000_000,
+        },
+    },
+
+    ["Currency"] = {
+        ["Lock Fragment"] = 459_000,
+    },
+
+    ["Performance"] = {
+        ["White Screen"] = false,
+        ["Booster FPS"] = false,
+        ["Lock FPS"] = 240,
+        ["AFK Timeout"] = 150,
+    },
+
+    -- Add the Raid section here
+    ["Raid"] = {
+        ["Buy With Beli"] = true,
+        ["Buy With Fruit"] = false,
+    },
+
+    -- Team Pirates section
+    ["Team Pirates"] = {
+        ["Join"] = true,      -- Automatically join pirates' team
+        ["Leave"] = false,    -- Option to leave the pirates' team
+        ["Auto Join Server"] = true,  -- Automatically join pirates' team on server join
+        ["Pirate Level"] = 10,  -- Minimum level to join the pirate team
+    },
+}
+
+-- Notification Display
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "GB10XO HUB V1",
+    Text = "WELCOME TO GB10XO HUB V1 ENJOY THE SCRIPT",
+    Duration = 5, -- Show the notification for 5 seconds
+})
+
+loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
